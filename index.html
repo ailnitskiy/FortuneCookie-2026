@@ -327,13 +327,13 @@
         ];
 
         // Get the user's text from localStorage
-        let userText = localStorage.getItem('newRandomText');
+        let userText = localStorage.getItem('fortuneCookie-2026');
 
         // If no text is stored, select a random one and save it
         if (!userText) {
             const randomIndex = Math.floor(Math.random() * texts.length);
             userText = texts[randomIndex];
-            localStorage.setItem('newRandomText', userText);
+            localStorage.setItem('fortuneCookie-2026', userText);
         }
 
         // Display the text on the page
